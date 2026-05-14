@@ -1,0 +1,149 @@
+- cmd: mkdir
+  when: 1778694391
+- cmd: mkdir arquitectura
+  when: 1778694401
+- cmd: man
+  when: 1778694552
+- cmd: sudo pacman -s discord
+  when: 1778696572
+- cmd: exit
+  when: 1778696589
+- cmd: man man
+  when: 1778712676
+- cmd: ssh-keygen -t ed25519
+  when: 1778771309
+- cmd: cat $HOME/.ssh/*.pub
+  when: 1778771347
+- cmd: mkdir repogit
+  when: 1778771673
+- cmd: cd repogit
+  when: 1778771681
+  paths:
+    - repogit
+- cmd: git clone git@github.com:brucemater02-sketch/TP1_AySO_Cardoso_Bruno.git
+  when: 1778771891
+- cmd: cd TP1_AySO_Cardoso_Bruno/
+  when: 1778771913
+  paths:
+    - TP1_AySO_Cardoso_Bruno/
+- cmd: pwd
+  when: 1778771942
+- cmd: ls -l
+  when: 1778771951
+- cmd: cat /etc/os-release
+  when: 1778771985
+  paths:
+    - /etc/os-release
+- cmd: grep HOME_URL /etc/os-release
+  when: 1778772093
+  paths:
+    - /etc/os-release
+- cmd: grep home_url /etc/os-release
+  when: 1778772154
+  paths:
+    - /etc/os-release
+- cmd: man grep
+  when: 1778772227
+- cmd: grep -i, --ignore-case\ngrep -i, --ignore-case Home_url /etc/os-release
+  when: 1778772359
+  paths:
+    - /etc/os-release
+- cmd: grep -i Home_url /etc/os-release
+  when: 1778772445
+  paths:
+    - /etc/os-release
+- cmd: whoami
+  when: 1778772719
+- cmd: echo “Usuario=$(whoami)” > datos_usuario.txt
+  when: 1778772931
+- cmd: git add.
+  when: 1778772976
+- cmd: git add .
+  when: 1778772986
+  paths:
+    - .
+- cmd: git config --global user.email "brucemater02@gmail.com"
+  when: 1778773087
+- cmd: git config --global user.name "bruno"
+  when: 1778773155
+- cmd: git commit -m "ADD: agregado 1er\nejercicio sobre datos_usuario.txt"
+  when: 1778773199
+- cmd: git status
+  when: 1778773209
+- cmd: git log
+  when: 1778773305
+- cmd: grep -m 1 "model name" /proc/proc/cpuinfo >> datos_usuario.txt
+  when: 1778773495
+- cmd: cpuinfo
+  when: 1778773534
+- cmd: proc/cpuinfo
+  when: 1778773541
+- cmd: grep "model name"/proc/cpuinfo|head-n1>>datos_usuario.txt
+  when: 1778773692
+- cmd: grep "model name" /proc/cpuinfo | head -n 1 >> datos_usuario.txt
+  when: 1778773747
+  paths:
+    - /proc/cpuinfo
+- cmd: git add datos_usuario.txt
+  when: 1778773768
+  paths:
+    - datos_usuario.txt
+- cmd: git commit “feat: Añadiendo información de CPU”
+  when: 1778773815
+- cmd: git commit -m “feat: Añadiendo información de CPU”
+  when: 1778773841
+- cmd: git commit -m “feat: Añadiendo información de CPU”\nerror: ruta especificada 'Añadiendo' no concordó con ningún archivo conocido por git\nerror: ruta especificada 'información' no concordó con ningún archivo conocido por git\nerror: ruta especificada 'de' no concordó con ningún archivo conocido por git\nerror: ruta especificada 'CPU”' no concordó con ningún archivo conocido por git
+  when: 1778773897
+- cmd: git commit -m "feat: Añadiendo información de CPU"
+  when: 1778773933
+- cmd: cat <EOF>> README.md
+  when: 1778774316
+- cmd: printf "Alumno: Bruno Cardoso\\nDivisión: <114>\\nTurno: <Mañana>\\n" >> README.md
+  when: 1778774496
+- cmd: git add README.md datos_usuarios.txt
+  when: 1778774518
+  paths:
+    - README.md
+- cmd: git add README.md datos_usuario.txt
+  when: 1778774585
+  paths:
+    - README.md
+    - datos_usuario.txt
+- cmd: git commit -m "feat: añadir README y datos de CPU"
+  when: 1778774612
+- cmd: git push
+  when: 1778774619
+- cmd: mkdir -p {materia1,materia2}/uni{1,2,3}
+  when: 1778774800
+- cmd: tree materia1
+  when: 1778774818
+  paths:
+    - materia1
+- cmd: tr materia1
+  when: 1778774840
+  paths:
+    - materia1
+- cmd: printf "mkdir -p {materia1,materia2}/uni{1,2,3}\\n" > script_dir.sh
+  when: 1778775604
+- cmd: chmod +x script_dir.sh
+  when: 1778775625
+  paths:
+    - script_dir.sh
+- cmd: git add script_dir.sh
+  when: 1778775649
+  paths:
+    - script_dir.sh
+- cmd: git commit -m "ADD: Añadiendo script"
+  when: 1778775671
+- cmd: git push
+  when: 1778775678
+- cmd: history -a
+  when: 1778775738
+- cmd: cp ../.bash_history ./Historial_comandos_Cardoso.txt
+  when: 1778775830
+- cmd: history save
+  when: 1778775870
+- cmd: cp ~/.local/share/fish/fish_history ./Historial_comandos_Cardoso.txt
+  when: 1778775878
+  paths:
+    - ~/.local/share/fish/fish_history
